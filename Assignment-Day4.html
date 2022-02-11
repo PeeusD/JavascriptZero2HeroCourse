@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--JS Zero to Hero Course--</title>
+</head>
+
+<body>
+    <h1>--JS Zero to Hero Course--</h1>
+    <h1>Assingment Day 4</h1>
+    <script>
+        //Assignment Day 4
+        // 1. create an  array of 5 objects & all the objects should have 4 properties
+        // [it's up to you what data you wanna take(students, avengers,user)]
+
+        // 2. Print two properties from that object using: 
+        //  for loop and
+        //  also by using forEach loop
+
+
+
+        var member1 = {     
+            Name: "Ironman/Tony",
+            Color: "Fair",
+            Power: "JARVIS",
+            Height: 6.2,
+
+
+        }
+        var member2 = {
+            Name: "Hulk/Dr.BruceBarren",
+            Color: "Green",
+            Power: "Body",
+            Height: 6.2,
+
+
+        }
+        var member3 = {
+            Name: "CaptainAmerica",
+            Color: "Fair",
+            Power: "Sheild",
+            Height: 6.3,
+
+        }
+        var member4 = {
+            Name: "SpiderMan",
+            Color: "Fair",
+            Power: "Spidy",
+            Height: 5.10,
+
+        }
+        var member5 = {
+            Name: "Thor",
+            Color: "Fair",
+            Power: "God of Thunder",
+            Height: 6.10,
+
+        }
+
+        var avengers = [member1,member2,member3,member4,member5] // Storing 5 objects into an array
+
+        // Using for loop
+        for (var i = 0; i < avengers.length; i++) {
+            console.log("1.first property-> ", avengers[i].Name, "2.second property-> ", avengers[i].Power);
+        }
+
+
+        //using ForEach Loop
+        avengers.forEach((element) => {
+            console.log("This member's name is: ", element['Name'], "and His Height is: ", element['Height']);
+        });
+
+
+
+    </script>
+</body>
+
+</html>
